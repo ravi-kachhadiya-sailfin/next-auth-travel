@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary: #086A59;
+  --primary-200: #006460;
+  --primary-400: #005D63;
+  --primary-600: #155662;
+  --primary-800: #244F5F;
+  --secondary: #2F4858;
+
+  --primary-o-5: #086A5950;
+  --primary-200-o-5: #00646050;
+  --primary-400-o-5: #005D6350;
+  --primary-600-o-5: #15566250;
+  --primary-800-o-5: #244F5F50;
+  --secondary-o-5: #2F485850;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  background-image: linear-gradient(rgb(255 255 255 / 95%), rgb(255 255 255 / 95%)), url("../public/assets/home/bg.jpg");
+  background-size: contain;
+  backdrop-filter: hue-rotate(256deg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-400-o-5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-800-o-5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-200-o-5);
+}

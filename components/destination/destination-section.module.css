@@ -1,0 +1,16 @@
+.section {
+	text-align: center;
+	padding: 50px;
+}
+
+.cardContainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+	.section {
+		padding: 20px;
+	}
+}
