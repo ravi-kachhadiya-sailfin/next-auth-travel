@@ -21,6 +21,10 @@
   margin: 0;
 }
 
+.desktopNav {
+  display: block;
+}
+
 .desktopNav ul {
   list-style: none;
   margin: 0;
@@ -37,6 +41,7 @@
   text-decoration: none;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .header button {
@@ -67,6 +72,7 @@
   z-index: 99;
   width: 60%;
   opacity: 0.95;
+  display: none;
 }
 
 .transparentBg {
@@ -74,7 +80,7 @@
 }
 
 .menu li {
-  padding: 1em;
+  padding: 1rem 9%;
   border-bottom: 1px solid var(--primary-400);
 }
 
@@ -106,5 +112,13 @@
   .mobileDisplay {
     display: block;
     cursor: pointer;
+  }
+
+  .desktopNav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
   }
 }

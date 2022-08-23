@@ -36,7 +36,7 @@ function MainNavigation() {
           <div className={classes.logo}>Next Auth</div>
         </a>
       </Link>
-      {isMenuOpen ?
+      {isMenuOpen &&
         <div className={`${classes.menu} ${location.pathname === "/" ? classes.transparentBg : ""}`}>
           <ul>
             <li>
@@ -53,35 +53,35 @@ function MainNavigation() {
               <Link href='/profile'>Profile</Link>
             </li>
             }
-            {/* {session && <li>
+            {session && <li>
+              <a onClick={logoutHandler}>Logout</a>
+            </li>
+            }
+          </ul>
+        </div>
+      }
+      <nav className={classes.desktopNav}>
+        <ul>
+          <li>
+            <Link href='/destinations'>Destinations</Link>
+          </li>
+          <li>
+            <Link href='/gallery'>Gallery</Link>
+          </li>
+          {!session && status !== 'loading' && <li>
+            <Link href='/auth'>Login</Link>
+          </li>
+          }
+          {session && <li>
+            <Link href='/profile'>Profile</Link>
+          </li>
+          }
+          {session && <li>
             <button onClick={logoutHandler}>Logout</button>
           </li>
-          } */}
-          </ul>
-        </div>
-        : <nav className={classes.desktopNav}>
-          <ul>
-            <li>
-              <Link href='/destinations'>Destinations</Link>
-            </li>
-            <li>
-              <Link href='/gallery'>Gallery</Link>
-            </li>
-            {!session && status !== 'loading' && <li>
-              <Link href='/auth'>Login</Link>
-            </li>
-            }
-            {session && <li>
-              <Link href='/profile'>Profile</Link>
-            </li>
-            }
-            {session && <li>
-              <button onClick={logoutHandler}>Logout</button>
-            </li>
-            }
-          </ul>
-        </nav>
-      }
+          }
+        </ul>
+      </nav>
     </header>
   );
 }

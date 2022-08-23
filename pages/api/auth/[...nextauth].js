@@ -33,5 +33,6 @@ export default NextAuth({
         return { email: user.email }
       }
     })
-  ]
+  ],
+  secret: process.env.NEXT_PUBLIC_SECRET
 });
